@@ -15,7 +15,7 @@ ouch.forEach(index =>
 
 //When the header is double clicked it turns pink//
 let header = document.querySelector('header');
-header.addEventListener('dblclick', () => {
+header.addEventListener('click', () => {
   header.style.backgroundColor = 'pink';
 });
 
@@ -46,7 +46,7 @@ nav[1].addEventListener('mouseenter', () => {
   nav[1].style.color = 'yellow';
 });
 //When clicked the third a tag should turn green without triggering the pink header event listener//
-nav[2].addEventListener('click', () => {
+nav[2].addEventListener('dblclick', () => {
   nav[2].style.color = 'green';
   event.stopPropagation();
 });
